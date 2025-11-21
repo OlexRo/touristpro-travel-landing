@@ -1,0 +1,460 @@
+@font-face {font-family: Comic_Sans_MS; src: url(/fonts/ComicSansMS.ttf)}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-family: Comic_Sans_MS, sans-serif;
+    list-style-type: none;
+    color: white}
+html, body {overflow-x: hidden}
+body {
+    width: 100%;
+    height: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background: #202020;
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0}}
+/*Контейнер сайта*/
+.wrapper {
+    a {text-decoration: none; color: white}
+    /*Шапка сайта*/
+    header {
+        /*Главная фото сайта*/
+        .main_foto {
+            background: url(/img/main_foto.jpg) no-repeat 0 0/ 100% auto fixed;
+            height: 100vh;
+            padding: 5vh;
+            /*Меню навигации*/
+            nav {
+                display: flex; 
+                justify-content: space-between;
+                font-size: 2vh;
+                /*Логотип*/
+                img{
+                    position: absolute;
+                    width: 40vh;
+                    height: 20vh;
+                    margin-top: -8vh;
+                    margin-left: -15vh}
+                .nav_menu {
+                    width: 60vh;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    i{padding: 0vh 0vh 0vh 3vh}
+                    .block_1 {
+                        margin: 0vh 0vh 0vh 3vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover{
+                            padding: 0vh 0vh .5vh 0vh;
+                            border-bottom: .4vh solid white}}
+                    .search {
+                        background: rgba(0, 0, 0, 0.801);
+                        border-radius: 1vh;
+                        height: 4vh;
+                        &:hover{border-bottom: none; padding: 0}
+                        input {
+                            background: none;
+                            border: none;
+                            outline: none;
+                            padding: 0vh 0vh 0vh 1vh}}}}
+            /*Название и слогон сайта*/
+            .main_name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 32vh 0vh 0vh 0vh;
+                h1{font-size: 7vh}
+                p{font-size: 3vh; font-family: Segoe Script}}}}
+    /*Основной контент сайта*/
+    main{
+        height: auto;
+        /*Анимированное бранирование билетов*/
+        .sec_1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 60vh;
+            background: url(/img/strelka_3.png) no-repeat;
+            .cricle_colum {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .punct{margin: 2vh 0vh 0vh 0vh}}
+            .cricle {
+                display: flex;
+                justify-content: center;
+                transition: top 1s ease;
+                align-items: center;
+                margin-top: 10vh;
+                width: 20vh;
+                height: 20vh;
+                background: grey;
+                animation: anim 5s linear infinite;
+                border-radius: 100%;
+                i{color: #3B4D73; font-size: 10vh}}
+            .bronirovanie{&:hover:before{content: 'Вперед?'; color: rgb(25, 82, 129)}}
+            .bilets{&:hover:before{content: 'Платим?'; color:  rgb(25, 82, 129)}}
+            .marsruti{&:hover:before{content: 'Берем?'; color:  rgb(25, 82, 129)}}
+            .mesta{&:hover:before{content: 'В путь?'; color:  rgb(25, 82, 129)}}
+            .pohods{&:hover:before{content: 'Готовы?'; color:  rgb(25, 82, 129)}}}
+        @keyframes anim {
+            to {
+                border: none;
+            }
+            from {
+                border: .5vh solid blue;
+                border: rotate(180deg);
+                border: .5vh solid rgb(29, 108, 161);
+            }
+        }
+        /*Отзывы на сайте*/
+        .sec_2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10vh;
+            .our_cel{
+                text-align: center;
+                h1{font-size: 3vh; margin-bottom: 2vh}
+                p{font-size: 2vh; line-height: 5vh}}
+            .comments{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                transition: all 1s all;
+                justify-content: center;
+                margin: 5vh 5vh 0vh 0vh;
+                .user_one{
+                    margin: 4vh;
+                    width: 40vh;
+                    height: 50vh;
+                    background: #404040;
+                    border-radius: 2vh;
+                    .block_user{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .user_icon{
+                            font-size: 8vh;
+                            border: 0.5vh solid white;
+                            border-radius: 100%;
+                        }}
+                    .user_name{
+                        margin: 2vh;
+                        font-size: 1.5vh;
+                        line-height: 4vh}}
+                .otzov{
+                    margin: 3vh;
+                    font-size: 2vh;
+                    line-height: 4vh;
+                    h3{margin-bottom: 2vh}}}}
+        /*Форма регистрации*/
+        .sec_3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url(/img/blur_foto_1.jpg) 0 0/ 100% 100%;
+            height: 100vh;
+            .foto_regist{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: url(/img/foto_regist.jpeg) 0 0/ 100% 100%;
+                line-height: 5vh;
+                width: 80%;
+                height: 80vh;
+                input {
+                    background: #00000063;
+                    width: 40%;
+                    padding: 1.5vh;
+                    outline: none;
+                    border: 1px solid white}
+                h1{font-size: 3vh; margin-bottom: 2vh}
+                p{width: 40%; font-size: 2vh}}
+                button {
+                    margin-top: 5vh;
+                    border: none;
+                    background: #138F97;
+                    transition: transform 1s ease;
+                    font-size: 2vh;
+                    padding: 2vh;
+                    width: 40%;
+                    &:hover{transform: scale(1.05)}}}
+        /*Акции на сайте*/
+        .sec_4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10vh;
+            height: auto;
+            h1{margin-bottom: -5vh}
+            .action{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                transition: transform 1s ease;
+                .first_a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 4vh;
+                    padding: 4vh;
+                    width: 40vh;
+                    height: 50vh;
+                    background: #404040;
+                    border-radius: 2vh;
+                    h1{font-size: 3vh}
+                    p {margin-top: 10vh; line-height: 4vh; font-size: 2vh}}
+                .a_b{
+                    background: url(/img/action_1.jpg) 0 0/ 100% 100%; 
+                    transition: transform 1s ease;
+                    &:hover{transform: scale(1.05)}}
+                .b_b{
+                    background: url(/img/action_2.jpg) 0 0/ 100% 100%;
+                    transition: transform 1s ease;
+                    &:hover{transform: scale(1.05)}}
+                .c_b{
+                    background: url(/img/action_3.jpg) 0 0/ 100% 100%;
+                    transition: transform 1s ease;
+                    &:hover{transform: scale(1.05)}}}}
+        /*Закрытые акции*/
+        .sec_5{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url(/img/blur_foto_2.jpg) 0 0/ 100% 100%;
+            height: 100vh;
+            .foto_regist{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content: center;
+                background: url(/img/foto_big_action.jpg) 0 0/ 100% 100%;
+                line-height: 5vh;
+                width: 80%;
+                height: 80vh;
+                input {
+                    background: #00000063;
+                    width: 40%;
+                    padding: 1.5vh;
+                    outline: none;
+                    border: 1px solid white}
+                h1{font-size: 3vh; margin-bottom: 2vh}
+                p{width: 40%; font-size: 2vh}}
+                button {
+                    margin-top: 5vh;
+                    border: none;
+                    background: #138F97;
+                    transition: transform 1s ease;
+                    font-size: 2vh;
+                    padding: 2vh;
+                    width: 40%;
+                    &:hover{transform: scale(1.05)}}}}
+    /*Подвал сайта*/
+    footer{
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        padding: 2vh;
+        border-top: 0.4vh solid rgb(41, 41, 41);
+        ol{margin-left: 50vh; line-height: 3vh}}}
+/*Вторая странца*/
+.main_foto_2{background: url(/img/action_3.jpg) 0 0/ 100% 100% !important}
+.sec_6{
+    height: 100vh;
+    h1{margin: 10vh 0vh 4vh 0vh; text-align: center;}
+    .opisanie_regiona{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content_sec_6{
+            margin: 4vh;
+            padding: 0vh 0vh 3vh 4vh;
+            width: 20%;
+            height: 70vh}
+        .center_content_sec_6{
+            width: 60%;
+            height: 65vh;
+            transition: transform 1s ease;
+            text-align: center;
+            p{margin-top: 2vh}
+            img{width: 110vh;
+            &:hover{
+                transition: transform 1s ease;
+                transform: scale(1.03)}}}}
+    .ocenka{
+        img{
+            margin-top: -3vh;
+            width: 12vh;
+            height: 10vh}}
+    h2{font-size: 2.5vh; margin: 3vh 0vh 2vh 0vh}
+    p{line-height: 4vh}
+    .interes_mesta{p{margin-bottom: 2vh}}}
+/*Третья странца*/
+.main_foto_3{background: url(/img/Dal_Vostock.png) -55vh -10vh/ 200vh 135vh !important}
+.main_name_2{
+    margin-left: 100vh;
+    margin-top: 20vh;
+    width: 40%;
+    h1{margin-bottom: 3vh}
+    p{line-height: 4vh}
+    button{
+        color: white;
+        cursor: pointer;
+        padding: 2vh;
+        font-size: 2vh;
+        margin-top: 2vh;
+        transition: transform 1s ease;
+        background: rgb(167, 53, 33);
+        border-radius: 1vh;;
+        border: none;
+        &:hover{transform: scale(1.05)}}}
+.sec_7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    .opis_mest{
+        width: 50vh;
+        height: 60vh;
+        margin: 4vh;
+        h2{margin-bottom: 2vh}
+        img{
+            border-radius: 2vh;
+            transition: transform 1s ease;
+            width: 100%;
+            height: 30vh;
+            &:hover{transform: scale(1.05)}}
+        .opis{
+            margin-top: 3vh;
+            padding-top: 1vh;
+            border-top: .5vh solid rgb(53, 53, 53);
+            p{
+                line-height: 4vh;
+                text-align: center}}}}
+/*Четвертая странца*/
+.main_foto_4{background: url(/img/123.jpg) 0 0/ 100% auto fixed !important; height: 240vh !important}
+.sec_11{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh !important;
+    .cena{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        line-height: 5vh;
+        width: 40%;
+        height: 80vh;
+        font-size: 15vh;
+        transform: rotate(35deg)}
+    height: 100vh;
+    .foto_regist{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        line-height: 5vh;
+        width: 50%;
+        height: 80vh;
+        input {
+            background: #00000063;
+            width: 40%;
+            padding: 1.5vh;
+            outline: none;
+            border: 1px solid white}
+        h1{font-size: 3vh; margin-bottom: 2vh}
+        p{width: 40%; font-size: 2vh}}}
+.sec_12{
+    display: flex;
+    justify-content: center;
+    height: 100vh !important;
+    .foto{
+        background: url(/img/Dal_Vostock.png) -500px -150px/ auto auto no-repeat;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        line-height: 5vh;
+        width: 50%;
+        height: 120vh;}
+        .foto_regist{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            line-height: 5vh;
+            width: 50%;
+            height: 80vh;
+            textarea{
+                margin-top: 2vh;
+                margin-right: -10vh;
+                background: #00000063;
+                outline: none;
+                border: 1px solid white;
+                padding: 2vh}
+            .op{width: 40%; margin-left: 18vh}
+            input {
+                margin-top: 2vh;
+                margin-right: 18vh;
+                background: #00000063;
+                padding: 1.5vh;
+                outline: none;
+                border: 1px solid white}
+            .iu{margin-top: 3vh; margin-bottom: -2vh}
+            .qu {
+                margin-right: 2vh;
+                border: none;
+                background: black;
+                transform:scale(2.0)}
+            h1{font-size: 3vh; margin-bottom: 2vh}
+            p{width: 40%; font-size: 2vh; margin-bottom: vh;}}}
+.oplata{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10vh;
+    button{
+        background: rgb(167, 53, 33);
+        border: none;
+        padding: 2vh;
+        cursor: pointer;
+        transition: transform 1s ease;
+        font-size: 2.5vh;
+        &:hover{transform: scale(1.05)}}
+    .cena_2{
+        margin-top: -25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        line-height: 5vh;
+        font-size: 15vh;
+        transform: rotate(35deg)}}
+select{
+    background: #00000063;
+    padding: 1.5vh;
+    width: 100%;
+    outline: none;
+    border: .2vh solid white}
+option{
+    background: #000000cc;
+    font-size: 1.5vh;
+    line-height: 2vh;
+    margin: 2vh}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+        font-size: 2vh;
+    }

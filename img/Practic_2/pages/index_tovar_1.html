@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <title>GameALL</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!--Шапка сайта-->
+        <div class="header">
+            <div class="left_header_content">
+                <div class="left_header_content_2">
+                    <div class="logo"><a href="/pages/index_Witcher.html"><img src="/img/logo3.png" alt=""></a></div>
+                </div>
+            </div>
+            <div class="center_header_content">
+                <div class="center_header_content_2">
+                    <div class="blocks_1 oplata"><a href="/pages/index_oplata.html">Оплата</a></div>
+                    <div class="blocks_1 dostavka"><a href="/pages/index_dostavka.html">Доставка</a></div>
+                    <div class="blocks_1 prredzakaz"><a href="/pages/index_predzakaz.html">Предзаказ</a></div>
+                    <div class="blocks_1 kontact"><a href="/pages/index_kontacts.html">Контакты</a></div>
+                </div>
+            </div>
+            <div class="right_header_content">
+                <div class="right_header_content_2">
+                    <div class="search blocks_2">
+                        <div class="icon"><i class='bx bx-search'></i></div>
+                            <div class="input">
+                            <input type="text" placeholder="Поиск" id="mySearch">
+                            <span class="clean">X</span>
+                        </div>
+                    </div>
+                    <div class="blocks_2 user">
+                        <button id="open-modal"><i class='bx bxs-user'></i></button>
+                        <div class="modal" id="mymodal">
+                            <div class="modal-window">
+                                <h1>Регистрация</h1>
+                                <p>Введите логин</p>
+                                <div class="regist"><input type="text" placeholder="Ваш логин..."></div> 
+                                <p>Введите пароль</p>
+                                <div class="regist"><input type="text" placeholder="Ваш пароль..."></div> 
+                                <p>Подвердите пароль</p>
+                                <div class="regist"><input type="text" placeholder="Ваш пароль..."></div> 
+                                <button class="but-regist">Зарегистрироваться</button>
+                                <button id="btn-close">X</button>
+                                <div class="dop_regist">Зарегистрироваться через</div>
+                                <div class="vk-regist"><i class='bx bxl-vk'></i></div>
+                                <div class="dop_regist">Или</div>
+                                <div class="dop_regist voiti">Войти</div>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="blocks_2 basket">
+                        <button id="open-modal_b"><i class='bx bxs-basket'></i></button>
+                        <div class="modal_b" id="mymodal_b">
+                            <div class="modal_window_b">
+                                <button id="btn-close_b">Продолжить покупки</button>
+                                <h1>Мои покупки</h1>
+                                <p>Промокод</p>
+                                <button class="promo">Применить</button>
+                                <div class="itog">
+                                    <div class="itog-f">Итог</div>
+                                    <div class="itog-s">0.00 Р</div>
+                                </div>
+                                <button class="op">Оплатить</button>
+                            </div>
+                            <div class="overlay"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--меню-->
+            
+            <div class="main_tovar">
+                <button class="backend" onclick="history.back();"><i class='bx bx-left-arrow-alt'></i></button> 
+                <div class="tovar">
+                    <div class="tov one">
+                        <div class="foto_fot_2"><img src="/img/Collection.png" alt="foto"></div>
+                        <div class="foto_fot_2"><img src="/img/col_2.png" alt="foto"></div>
+                    </div>
+                    <div class="tov two">
+                        <div class="big_foto">
+                            <img src="/img/Collection.png" alt="фото_большое">
+                        </div>
+                    </div>
+                    <div class="tov three">
+                        <div class="name_tovar_card">
+                            <p class="oform">Главная / Коллекция / Fallout / Collection Edition Fallout </p>
+                            <p class="oform_2">Collection Edition Fallout</p>
+                            <p class="oform_3">1999 Р</p>
+                        </div>
+                        <div class="tovar_oplata">
+                            <div class="knop dobav">
+                                <button class="knop_2 plus">+</button>
+                                <button class="knop_2 col">1</button>
+                                <button class="knop_2 minus">-</button>
+                            </div>
+                            <button class="knop v_korzinu">В корзину</button>
+                        </div>
+                        <div class="tovar_dostavka">
+                            <i class='bx bxs-package'></i>
+                            <h2>Доставка</h2>
+                        </div>
+                        <div class="paraf">
+                            <p>• Самовывоз из магазина</p>
+                            <p>• Доставка Почтой России</p>
+                            <p>• Доставка по странам СНГ CDEK</p>
+                        </div>
+                    </div>
+                    <div class="four">
+                        <div class="tovar_harak">
+                            <i class='bx bx-bar-chart-alt' ></i>
+                            <h2>Характеристика</h2>
+                        </div>
+                        <div class="paraf_2">
+                            <p>• Пазл 1000 элементов (68*48 см в собранном виде)</p>
+                            <p>• Плакат 68*48 см</p>
+                            <p>• Хлопковый мешочек с принтом для хранения элементов</p>
+                            <p>• Серия пазлов будет постоянно расширяться, как новыми графическими темами так и новыми лицензиям</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Подвал-->
+        <div class="footer">
+            <div class="section1">
+                <div class="pop_sec one-s">Assassin' Creed Fallout witcher Far Cry</div>
+                <div class="pop_sec two">
+                    <div class="bottom_logo"><img src="/img/logo3.png" alt=""></div>
+                    <div class="icon"><i class='bx bxl-vk'></i></div>
+                    <div class="icon"><i class='bx bxl-telegram' ></i></div>
+                    <div class="icon"><i class='bx bxl-twitter' ></i></div>
+                    <div class="icon"><i class='bx bxl-facebook' ></i></div>
+                </div>
+                <div class="pop_sec three">ⓒ 2023, GameALL.com</div>
+            </div>
+            <div class="section2">
+                <div class="pop_sec_2 onel">E-mail: ssysysy@gmail.com</div>
+                <div class="pop_sec_2 twol`">Время работы службы поддержки:ПН-ПТ: 9:00-21:00</div>
+                <div class="pop_sec_2 fourl">Доставка по России осуществляется службой доствки: Почта РоссииДоставка за границу осуществляется доставкой: CDEK  </div>
+            </div>
+        </div>
+        <script src="/js/main.js"></script>
+    </div>
+</body>
+</html>
+

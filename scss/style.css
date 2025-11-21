@@ -1,0 +1,673 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Comic_Sans_MS;
+  src: url(/fonts/ComicSansMS.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-family: Comic_Sans_MS, sans-serif;
+  list-style-type: none;
+  color: white;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background: #202020;
+}
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/*Контейнер сайта*/
+.wrapper {
+  /*Шапка сайта*/
+  /*Основной контент сайта*/
+  /*Подвал сайта*/
+}
+.wrapper a {
+  text-decoration: none;
+  color: white;
+}
+.wrapper header {
+  /*Главная фото сайта*/
+}
+.wrapper header .main_foto {
+  background: url(/img/main_foto.jpg) no-repeat 0 0/100% auto fixed;
+  height: 100vh;
+  padding: 5vh;
+  /*Меню навигации*/
+  /*Название и слогон сайта*/
+}
+.wrapper header .main_foto nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2vh;
+  /*Логотип*/
+}
+.wrapper header .main_foto nav img {
+  position: absolute;
+  width: 40vh;
+  height: 20vh;
+  margin-top: -8vh;
+  margin-left: -15vh;
+}
+.wrapper header .main_foto nav .nav_menu {
+  width: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper header .main_foto nav .nav_menu i {
+  padding: 0vh 0vh 0vh 3vh;
+}
+.wrapper header .main_foto nav .nav_menu .block_1 {
+  margin: 0vh 0vh 0vh 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper header .main_foto nav .nav_menu .block_1:hover {
+  padding: 0vh 0vh 0.5vh 0vh;
+  border-bottom: 0.4vh solid white;
+}
+.wrapper header .main_foto nav .nav_menu .search {
+  background: rgba(0, 0, 0, 0.801);
+  border-radius: 1vh;
+  height: 4vh;
+}
+.wrapper header .main_foto nav .nav_menu .search:hover {
+  border-bottom: none;
+  padding: 0;
+}
+.wrapper header .main_foto nav .nav_menu .search input {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0vh 0vh 0vh 1vh;
+}
+.wrapper header .main_foto .main_name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32vh 0vh 0vh 0vh;
+}
+.wrapper header .main_foto .main_name h1 {
+  font-size: 7vh;
+}
+.wrapper header .main_foto .main_name p {
+  font-size: 3vh;
+  font-family: Segoe Script;
+}
+.wrapper main {
+  height: auto;
+  /*Анимированное бранирование билетов*/
+  /*Отзывы на сайте*/
+  /*Форма регистрации*/
+  /*Акции на сайте*/
+  /*Закрытые акции*/
+}
+.wrapper main .sec_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60vh;
+  background: url(/img/strelka_3.png) no-repeat;
+}
+.wrapper main .sec_1 .cricle_colum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper main .sec_1 .cricle_colum .punct {
+  margin: 2vh 0vh 0vh 0vh;
+}
+.wrapper main .sec_1 .cricle {
+  display: flex;
+  justify-content: center;
+  transition: top 1s ease;
+  align-items: center;
+  margin-top: 10vh;
+  width: 20vh;
+  height: 20vh;
+  background: grey;
+  animation: anim 5s linear infinite;
+  border-radius: 100%;
+}
+.wrapper main .sec_1 .cricle i {
+  color: #3B4D73;
+  font-size: 10vh;
+}
+.wrapper main .sec_1 .bronirovanie:hover:before {
+  content: "Вперед?";
+  color: rgb(25, 82, 129);
+}
+.wrapper main .sec_1 .bilets:hover:before {
+  content: "Платим?";
+  color: rgb(25, 82, 129);
+}
+.wrapper main .sec_1 .marsruti:hover:before {
+  content: "Берем?";
+  color: rgb(25, 82, 129);
+}
+.wrapper main .sec_1 .mesta:hover:before {
+  content: "В путь?";
+  color: rgb(25, 82, 129);
+}
+.wrapper main .sec_1 .pohods:hover:before {
+  content: "Готовы?";
+  color: rgb(25, 82, 129);
+}
+@keyframes anim {
+  to {
+    border: none;
+  }
+  from {
+    border: 0.5vh solid blue;
+    border: rotate(180deg);
+    border: 0.5vh solid rgb(29, 108, 161);
+  }
+}
+.wrapper main .sec_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+}
+.wrapper main .sec_2 .our_cel {
+  text-align: center;
+}
+.wrapper main .sec_2 .our_cel h1 {
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+.wrapper main .sec_2 .our_cel p {
+  font-size: 2vh;
+  line-height: 5vh;
+}
+.wrapper main .sec_2 .comments {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: all 1s all;
+  justify-content: center;
+  margin: 5vh 5vh 0vh 0vh;
+}
+.wrapper main .sec_2 .comments .user_one {
+  margin: 4vh;
+  width: 40vh;
+  height: 50vh;
+  background: #404040;
+  border-radius: 2vh;
+}
+.wrapper main .sec_2 .comments .user_one .block_user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper main .sec_2 .comments .user_one .block_user .user_icon {
+  font-size: 8vh;
+  border: 0.5vh solid white;
+  border-radius: 100%;
+}
+.wrapper main .sec_2 .comments .user_one .user_name {
+  margin: 2vh;
+  font-size: 1.5vh;
+  line-height: 4vh;
+}
+.wrapper main .sec_2 .comments .otzov {
+  margin: 3vh;
+  font-size: 2vh;
+  line-height: 4vh;
+}
+.wrapper main .sec_2 .comments .otzov h3 {
+  margin-bottom: 2vh;
+}
+.wrapper main .sec_3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/img/blur_foto_1.jpg) 0 0/100% 100%;
+  height: 100vh;
+}
+.wrapper main .sec_3 .foto_regist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(/img/foto_regist.jpeg) 0 0/100% 100%;
+  line-height: 5vh;
+  width: 80%;
+  height: 80vh;
+}
+.wrapper main .sec_3 .foto_regist input {
+  background: rgba(0, 0, 0, 0.3882352941);
+  width: 40%;
+  padding: 1.5vh;
+  outline: none;
+  border: 1px solid white;
+}
+.wrapper main .sec_3 .foto_regist h1 {
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+.wrapper main .sec_3 .foto_regist p {
+  width: 40%;
+  font-size: 2vh;
+}
+.wrapper main .sec_3 button {
+  margin-top: 5vh;
+  border: none;
+  background: #138F97;
+  transition: transform 1s ease;
+  font-size: 2vh;
+  padding: 2vh;
+  width: 40%;
+}
+.wrapper main .sec_3 button:hover {
+  transform: scale(1.05);
+}
+.wrapper main .sec_4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+  height: auto;
+}
+.wrapper main .sec_4 h1 {
+  margin-bottom: -5vh;
+}
+.wrapper main .sec_4 .action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  transition: transform 1s ease;
+}
+.wrapper main .sec_4 .action .first_a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4vh;
+  padding: 4vh;
+  width: 40vh;
+  height: 50vh;
+  background: #404040;
+  border-radius: 2vh;
+}
+.wrapper main .sec_4 .action .first_a h1 {
+  font-size: 3vh;
+}
+.wrapper main .sec_4 .action .first_a p {
+  margin-top: 10vh;
+  line-height: 4vh;
+  font-size: 2vh;
+}
+.wrapper main .sec_4 .action .a_b {
+  background: url(/img/action_1.jpg) 0 0/100% 100%;
+  transition: transform 1s ease;
+}
+.wrapper main .sec_4 .action .a_b:hover {
+  transform: scale(1.05);
+}
+.wrapper main .sec_4 .action .b_b {
+  background: url(/img/action_2.jpg) 0 0/100% 100%;
+  transition: transform 1s ease;
+}
+.wrapper main .sec_4 .action .b_b:hover {
+  transform: scale(1.05);
+}
+.wrapper main .sec_4 .action .c_b {
+  background: url(/img/action_3.jpg) 0 0/100% 100%;
+  transition: transform 1s ease;
+}
+.wrapper main .sec_4 .action .c_b:hover {
+  transform: scale(1.05);
+}
+.wrapper main .sec_5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/img/blur_foto_2.jpg) 0 0/100% 100%;
+  height: 100vh;
+}
+.wrapper main .sec_5 .foto_regist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(/img/foto_big_action.jpg) 0 0/100% 100%;
+  line-height: 5vh;
+  width: 80%;
+  height: 80vh;
+}
+.wrapper main .sec_5 .foto_regist input {
+  background: rgba(0, 0, 0, 0.3882352941);
+  width: 40%;
+  padding: 1.5vh;
+  outline: none;
+  border: 1px solid white;
+}
+.wrapper main .sec_5 .foto_regist h1 {
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+.wrapper main .sec_5 .foto_regist p {
+  width: 40%;
+  font-size: 2vh;
+}
+.wrapper main .sec_5 button {
+  margin-top: 5vh;
+  border: none;
+  background: #138F97;
+  transition: transform 1s ease;
+  font-size: 2vh;
+  padding: 2vh;
+  width: 40%;
+}
+.wrapper main .sec_5 button:hover {
+  transform: scale(1.05);
+}
+.wrapper footer {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  padding: 2vh;
+  border-top: 0.4vh solid rgb(41, 41, 41);
+}
+.wrapper footer ol {
+  margin-left: 50vh;
+  line-height: 3vh;
+}
+
+/*Вторая странца*/
+.main_foto_2 {
+  background: url(/img/action_3.jpg) 0 0/100% 100% !important;
+}
+
+.sec_6 {
+  height: 100vh;
+}
+.sec_6 h1 {
+  margin: 10vh 0vh 4vh 0vh;
+  text-align: center;
+}
+.sec_6 .opisanie_regiona {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec_6 .opisanie_regiona .content_sec_6 {
+  margin: 4vh;
+  padding: 0vh 0vh 3vh 4vh;
+  width: 20%;
+  height: 70vh;
+}
+.sec_6 .opisanie_regiona .center_content_sec_6 {
+  width: 60%;
+  height: 65vh;
+  transition: transform 1s ease;
+  text-align: center;
+}
+.sec_6 .opisanie_regiona .center_content_sec_6 p {
+  margin-top: 2vh;
+}
+.sec_6 .opisanie_regiona .center_content_sec_6 img {
+  width: 110vh;
+}
+.sec_6 .opisanie_regiona .center_content_sec_6 img:hover {
+  transition: transform 1s ease;
+  transform: scale(1.03);
+}
+.sec_6 .ocenka img {
+  margin-top: -3vh;
+  width: 12vh;
+  height: 10vh;
+}
+.sec_6 h2 {
+  font-size: 2.5vh;
+  margin: 3vh 0vh 2vh 0vh;
+}
+.sec_6 p {
+  line-height: 4vh;
+}
+.sec_6 .interes_mesta p {
+  margin-bottom: 2vh;
+}
+
+/*Третья странца*/
+.main_foto_3 {
+  background: url(/img/Dal_Vostock.png) -55vh -10vh/200vh 135vh !important;
+}
+
+.main_name_2 {
+  margin-left: 100vh;
+  margin-top: 20vh;
+  width: 40%;
+}
+.main_name_2 h1 {
+  margin-bottom: 3vh;
+}
+.main_name_2 p {
+  line-height: 4vh;
+}
+.main_name_2 button {
+  color: white;
+  cursor: pointer;
+  padding: 2vh;
+  font-size: 2vh;
+  margin-top: 2vh;
+  transition: transform 1s ease;
+  background: rgb(167, 53, 33);
+  border-radius: 1vh;
+  border: none;
+}
+.main_name_2 button:hover {
+  transform: scale(1.05);
+}
+
+.sec_7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+}
+.sec_7 .opis_mest {
+  width: 50vh;
+  height: 60vh;
+  margin: 4vh;
+}
+.sec_7 .opis_mest h2 {
+  margin-bottom: 2vh;
+}
+.sec_7 .opis_mest img {
+  border-radius: 2vh;
+  transition: transform 1s ease;
+  width: 100%;
+  height: 30vh;
+}
+.sec_7 .opis_mest img:hover {
+  transform: scale(1.05);
+}
+.sec_7 .opis_mest .opis {
+  margin-top: 3vh;
+  padding-top: 1vh;
+  border-top: 0.5vh solid rgb(53, 53, 53);
+}
+.sec_7 .opis_mest .opis p {
+  line-height: 4vh;
+  text-align: center;
+}
+
+/*Четвертая странца*/
+.main_foto_4 {
+  background: url(/img/123.jpg) 0 0/100% auto fixed !important;
+  height: 240vh !important;
+}
+
+.sec_11 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh !important;
+  height: 100vh;
+}
+.sec_11 .cena {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 5vh;
+  width: 40%;
+  height: 80vh;
+  font-size: 15vh;
+  transform: rotate(35deg);
+}
+.sec_11 .foto_regist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 5vh;
+  width: 50%;
+  height: 80vh;
+}
+.sec_11 .foto_regist input {
+  background: rgba(0, 0, 0, 0.3882352941);
+  width: 40%;
+  padding: 1.5vh;
+  outline: none;
+  border: 1px solid white;
+}
+.sec_11 .foto_regist h1 {
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+.sec_11 .foto_regist p {
+  width: 40%;
+  font-size: 2vh;
+}
+
+.sec_12 {
+  display: flex;
+  justify-content: center;
+  height: 100vh !important;
+}
+.sec_12 .foto {
+  background: url(/img/Dal_Vostock.png) -500px -150px/auto auto no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 5vh;
+  width: 50%;
+  height: 120vh;
+}
+.sec_12 .foto_regist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 5vh;
+  width: 50%;
+  height: 80vh;
+}
+.sec_12 .foto_regist textarea {
+  margin-top: 2vh;
+  margin-right: -10vh;
+  background: rgba(0, 0, 0, 0.3882352941);
+  outline: none;
+  border: 1px solid white;
+  padding: 2vh;
+}
+.sec_12 .foto_regist .op {
+  width: 40%;
+  margin-left: 18vh;
+}
+.sec_12 .foto_regist input {
+  margin-top: 2vh;
+  margin-right: 18vh;
+  background: rgba(0, 0, 0, 0.3882352941);
+  padding: 1.5vh;
+  outline: none;
+  border: 1px solid white;
+}
+.sec_12 .foto_regist .iu {
+  margin-top: 3vh;
+  margin-bottom: -2vh;
+}
+.sec_12 .foto_regist .qu {
+  margin-right: 2vh;
+  border: none;
+  background: black;
+  transform: scale(2);
+}
+.sec_12 .foto_regist h1 {
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+.sec_12 .foto_regist p {
+  width: 40%;
+  font-size: 2vh;
+  margin-bottom: vh;
+}
+
+.oplata {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10vh;
+}
+.oplata button {
+  background: rgb(167, 53, 33);
+  border: none;
+  padding: 2vh;
+  cursor: pointer;
+  transition: transform 1s ease;
+  font-size: 2.5vh;
+}
+.oplata button:hover {
+  transform: scale(1.05);
+}
+.oplata .cena_2 {
+  margin-top: -25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 5vh;
+  font-size: 15vh;
+  transform: rotate(35deg);
+}
+
+select {
+  background: rgba(0, 0, 0, 0.3882352941);
+  padding: 1.5vh;
+  width: 100%;
+  outline: none;
+  border: 0.2vh solid white;
+}
+
+option {
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 1.5vh;
+  line-height: 2vh;
+  margin: 2vh;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  font-size: 2vh;
+}/*# sourceMappingURL=style.css.map */
